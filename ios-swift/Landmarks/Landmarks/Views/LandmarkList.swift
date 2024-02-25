@@ -10,13 +10,19 @@ import SwiftUI
 
 
 struct LandmarkList: View {
+    @State var filterFaves = false
+    @Binding var landmarks: [Landmark]
+    
     var body: some View {
         NavigationSplitView {
-            List(landmarks) { landmark in
+            Toggle("", isOn: $filterFaves)
+            List($landmarks.filter{ landmark in
+                !filterFaves || landmark.isFavorite.wrappedValue
+            }) { $landmark in
                 NavigationLink {
                     LandmarkDetail(landmark: landmark)
                 } label: {
-                    LandmarkRow(landmark: landmark)
+                    LandmarkRow(landmark: $landmark)
                 }
             }
             .navigationTitle("Landmarks")
@@ -24,8 +30,4 @@ struct LandmarkList: View {
             Text("Select a Landmark")
         }
     }
-}
-
-#Preview {
-    LandmarkList()
 }

@@ -16,7 +16,7 @@ struct Landmark : Codable, Hashable, Identifiable {
     var state: String
     var id: Int
     //    var isFeatured: Bool
-    //    var isFavorite: Bool
+    var isFavorite: Bool
     var park: String
     struct Coordinates : Codable, Hashable {
         var longitude: Double
