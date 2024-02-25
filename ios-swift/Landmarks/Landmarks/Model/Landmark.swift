@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import MapKit
 
-struct Landmark : Codable, Hashable {
+struct Landmark : Codable, Hashable, Identifiable {
     var name: String
     //    var category: String
     //    var city: String
