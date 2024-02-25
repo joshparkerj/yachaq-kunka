@@ -42,3 +42,11 @@ struct LandmarkDetail: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 }
+
+#Preview("Turtle Rock") {
+    LandmarkDetail(landmark: resourceLandmarks[0])
+}
+
+#Preview("Silver Salmon Creek") {
+    LandmarkDetail(landmark: resourceLandmarks[1])
+}

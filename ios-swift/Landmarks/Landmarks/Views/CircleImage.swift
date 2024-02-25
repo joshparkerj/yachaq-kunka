@@ -20,3 +20,11 @@ struct CircleImage: View {
             .shadow(radius: 7)
     }
 }
+
+#Preview("Turtle Rock") {
+    CircleImage(image: resourceLandmarks[0].image)
+}
+
+#Preview("Silver...") {
+    CircleImage(image: resourceLandmarks[1].image)
+}

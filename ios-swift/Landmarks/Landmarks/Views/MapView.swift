@@ -24,3 +24,11 @@ struct MapView: View {
         )
     }
 }
+
+#Preview("Turtle Rock") {
+    MapView(coordinate: resourceLandmarks[0].coordinate)
+}
+
+#Preview("Silver...") {
+    MapView(coordinate: resourceLandmarks[1].coordinate)
+}
