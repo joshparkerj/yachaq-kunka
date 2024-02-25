@@ -25,6 +25,7 @@
 		49DB919F2B8BE760001DF4EE /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB919E2B8BE760001DF4EE /* FavoriteButton.swift */; };
 		49DB91A32B8BF1DE001DF4EE /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB91A22B8BF1DE001DF4EE /* HexagonParameters.swift */; };
 		49DB91A52B8BF491001DF4EE /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB91A42B8BF491001DF4EE /* BadgeBackground.swift */; };
+		49DB91A72B8BFABB001DF4EE /* landmark_app_icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 49DB91A62B8BFABB001DF4EE /* landmark_app_icon_1024x1024.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		49DB919E2B8BE760001DF4EE /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		49DB91A22B8BF1DE001DF4EE /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		49DB91A42B8BF491001DF4EE /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
+		49DB91A62B8BFABB001DF4EE /* landmark_app_icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landmark_app_icon_1024x1024.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		49C26FE32B8974E30042F008 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				49DB91A62B8BFABB001DF4EE /* landmark_app_icon_1024x1024.png */,
 				49C26FDB2B896BA70042F008 /* landmarkData.json */,
 			);
 			path = Resources;
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C26FB32B894F970042F008 /* Preview Assets.xcassets in Resources */,
+				49DB91A72B8BFABB001DF4EE /* landmark_app_icon_1024x1024.png in Resources */,
 				49C26FB02B894F970042F008 /* Assets.xcassets in Resources */,
 				49C26FDC2B896BA70042F008 /* landmarkData.json in Resources */,
 			);
