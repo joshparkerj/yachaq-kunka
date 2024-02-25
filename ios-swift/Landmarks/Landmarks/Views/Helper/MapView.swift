@@ -26,9 +26,9 @@ struct MapView: View {
 }
 
 #Preview("Turtle Rock") {
-    MapView(coordinate: resourceLandmarks[0].coordinate)
+    MapView(coordinate: ModelData().landmarks[0].coordinate)
 }
 
 #Preview("Silver...") {
-    MapView(coordinate: resourceLandmarks[1].coordinate)
+    MapView(coordinate: ModelData().landmarks[1].coordinate)
 }

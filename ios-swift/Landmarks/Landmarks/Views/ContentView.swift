@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var landmarks: [Landmark]
-    
     var body: some View {
-        LandmarkList(landmarks: $landmarks)
+        LandmarkList()
     }
 }
 
 #Preview {
-    ContentView(landmarks: resourceLandmarks)
+    ContentView()
+        .environment(ModelData())
 }
