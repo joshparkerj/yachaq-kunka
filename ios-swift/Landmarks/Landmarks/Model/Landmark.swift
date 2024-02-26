@@ -11,11 +11,18 @@ import MapKit
 
 struct Landmark : Codable, Hashable, Identifiable {
     var name: String
-    //    var category: String
+    
+    enum Category : String, CaseIterable, Codable {
+        case lakes = "Lakes"
+        case rivers = "Rivers"
+        case mountains = "Mountains"
+    }
+    
+    var category: Category
     //    var city: String
     var state: String
     var id: Int
-    //    var isFeatured: Bool
+    var isFeatured: Bool
     var isFavorite: Bool
     var park: String
     struct Coordinates : Codable, Hashable {
