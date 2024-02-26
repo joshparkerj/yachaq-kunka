@@ -13,6 +13,7 @@
 		49102A472B8D186800753406 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49102A462B8D186800753406 /* ProfileHost.swift */; };
 		49102A492B8D19EE00753406 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49102A482B8D19ED00753406 /* ProfileSummary.swift */; };
 		49102A4B2B8D255500753406 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49102A4A2B8D255500753406 /* HikeBadge.swift */; };
+		49102A4D2B8D3E1100753406 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49102A4C2B8D3E1100753406 /* ProfileEditor.swift */; };
 		4975BEA02B8CE40A00A94117 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4975BE9F2B8CE40A00A94117 /* hikeData.json */; };
 		4975BEA22B8CE44600A94117 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975BEA12B8CE44600A94117 /* Hike.swift */; };
 		4975BEA82B8CE75700A94117 /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975BEA42B8CE75700A94117 /* GraphCapsule.swift */; };
@@ -70,6 +71,7 @@
 		49102A462B8D186800753406 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		49102A482B8D19ED00753406 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		49102A4A2B8D255500753406 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
+		49102A4C2B8D3E1100753406 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		4975BE9F2B8CE40A00A94117 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		4975BEA12B8CE44600A94117 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Hike.swift; path = Landmarks/Resources/Hike.swift; sourceTree = SOURCE_ROOT; };
 		4975BEA42B8CE75700A94117 /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				49102A462B8D186800753406 /* ProfileHost.swift */,
+				49102A4C2B8D3E1100753406 /* ProfileEditor.swift */,
 				49102A482B8D19ED00753406 /* ProfileSummary.swift */,
 			);
 			path = Profiles;
@@ -424,6 +427,7 @@
 			files = (
 				49C26FAE2B894F930042F008 /* ContentView.swift in Sources */,
 				49C26FDA2B8961050042F008 /* MapView.swift in Sources */,
+				49102A4D2B8D3E1100753406 /* ProfileEditor.swift in Sources */,
 				49102A492B8D19EE00753406 /* ProfileSummary.swift in Sources */,
 				49C26FE52B8975220042F008 /* LandmarkRow.swift in Sources */,
 				49102A442B8D16F300753406 /* Profile.swift in Sources */,
