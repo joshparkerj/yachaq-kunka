@@ -14,9 +14,10 @@ struct RotatedBadgeSymbol: View {
         BadgeSymbol()
             .padding(-60)
             .rotationEffect(angle, anchor: .bottom)
+            
     }
 }
 
 #Preview {
-    RotatedBadgeSymbol(angle: Angle(degrees: 4))
+    RotatedBadgeSymbol(angle: Angle(degrees: 5))
 }
