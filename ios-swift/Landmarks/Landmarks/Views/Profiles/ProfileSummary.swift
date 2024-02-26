@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileSummary: View {
+    @Environment(ModelData.self) var modelData
     var profile: Profile
     
     var body: some View {
@@ -30,10 +31,23 @@ struct ProfileSummary: View {
                 
                 ScrollView(.horizontal) {
                     HStack {
-                        HikeBadge(name: "Doug Dimmadome")
-                        HikeBadge(name: "Doug Dimmadome")
-                        HikeBadge(name: "Doug Dimmadome")
+                        HikeBadge(name: "Hiked the Half Dome")
+                            .hueRotation(Angle(degrees: 90))
+                        HikeBadge(name: "Hiked the Capitol Dome")
+                            .grayscale(0.5)
+                            .hueRotation(Angle(degrees: 45))
+                        HikeBadge(name: "Hiked the Dimmsdale Dimmadome")
                     }
+                }
+                .padding(.bottom)
+                
+                Divider()
+                
+                VStack {
+                    Text("Recent Hikes")
+                        .font(.headline)
+                    
+                    HikeView(hike: modelData.hikes[0])
                 }
             }
         }
@@ -42,4 +56,5 @@ struct ProfileSummary: View {
 
 #Preview {
     ProfileSummary(profile: Profile.default)
+        .environment(ModelData())
 }

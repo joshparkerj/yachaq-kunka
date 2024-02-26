@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CategoryHome: View {
     @Environment(ModelData.self) var modelData
+    @State private var showingProfile = false
     
     var body: some View {
         NavigationSplitView {
@@ -21,14 +22,27 @@ struct CategoryHome: View {
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-                        CategoryRow(
-                            categoryName: key,
-                            landmarks: modelData.categories[key] ?? []
-                        )
-                        .listRowInsets(EdgeInsets())
+                    CategoryRow(
+                        categoryName: key,
+                        landmarks: modelData.categories[key] ?? []
+                    )
+                    .listRowInsets(EdgeInsets())
                     
                 }
-            }.navigationTitle("Featured")
+            }
+            .listStyle(.inset)
+            .navigationTitle("Featured")
+            .toolbar {
+                Button {
+                    showingProfile.toggle()
+                } label: {
+                    Label("User Profile", systemImage: "person.crop.circle")
+                }
+            }
+            .popover (isPresented: $showingProfile) {
+                ProfileHost()
+                    .presentationCornerRadius(60)
+            }
         } detail: {
             Text("Select a Landmark")
         }

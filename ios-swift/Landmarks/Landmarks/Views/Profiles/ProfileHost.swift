@@ -12,7 +12,7 @@ struct ProfileHost: View {
     
     var body: some View {
         VStack (alignment: .leading, spacing: 20) {
-            Text("Hello, World! and hello to you \(profile.username)")
+            Text("Hiya, World! and hello to you \(profile.username)")
             Spacer()
             ProfileSummary(profile: profile)
         }
@@ -38,4 +38,5 @@ struct ProfileHost: View {
 
 #Preview {
     ProfileHost()
+        .environment(ModelData())
 }
