@@ -31,13 +31,13 @@ struct PageView <Page: View> : View {
                 .frame(width: CGFloat(pages.count + 18))
                 .padding(.trailing)
             }
-            
+            /*
             Button(action: {
                 pageNumber = 0
             }, label: {
                 Text("Jump to Page One")
             })
-            .buttonStyle(.bordered)
+            .buttonStyle(.bordered)*/
         }
     }
 }

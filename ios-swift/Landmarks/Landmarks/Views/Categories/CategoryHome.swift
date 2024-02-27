@@ -13,15 +13,7 @@ struct CategoryHome: View {
     
     var body: some View {
         NavigationSplitView {
-            List {/*
-                modelData.featured[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
-                    .listRowInsets(EdgeInsets())
-                */
-                
+            List {
                 PageView(pages: modelData.featured.map{ page in
                     FeatureCard(landmark: page)
                 }).listRowInsets(EdgeInsets())
