@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct PageView <Page: View> : View {
+    @State private var pageNumber = 0
+    
     var pages: [Page]
     
     var body: some View {
-        PageViewController(pages: pages)
-            .aspectRatio(3.0 / 2.0, contentMode: .fit)
+        VStack {
+            PageViewController(pages: pages, currentPage: $pageNumber)
+                .aspectRatio(3.0 / 2.0, contentMode: .fit)
+            Spacer()
+            Text("Page: \(1 + $pageNumber.wrappedValue)")
+            Button(action: {
+                pageNumber = 0
+            }, label: {
+                Text("Jump to Page One")
+            })
+            .buttonStyle(.bordered)
+        }
     }
 }
 
