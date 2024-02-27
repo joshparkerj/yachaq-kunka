@@ -45,6 +45,7 @@
 		49DB91AB2B8C0579001DF4EE /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB91AA2B8C0579001DF4EE /* RotatedBadgeSymbol.swift */; };
 		49DB91AD2B8C0624001DF4EE /* BadgeForeground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB91AC2B8C0624001DF4EE /* BadgeForeground.swift */; };
 		49DB91AF2B8C0A4A001DF4EE /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB91AE2B8C0A4A001DF4EE /* Badge.swift */; };
+		49E7E8C92B8E47AE005C6ECD /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7E8C82B8E47AE005C6ECD /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		49DB91AA2B8C0579001DF4EE /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 		49DB91AC2B8C0624001DF4EE /* BadgeForeground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeForeground.swift; sourceTree = "<group>"; };
 		49DB91AE2B8C0A4A001DF4EE /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		49E7E8C82B8E47AE005C6ECD /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 		49C26FE12B89749B0042F008 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49E7E8C72B8E4796005C6ECD /* PageViews */,
 				49102A452B8D185400753406 /* Profiles */,
 				4975BEAC2B8CF2BA00A94117 /* Categories */,
 				4975BEA32B8CE75700A94117 /* Hikes */,
@@ -290,6 +293,14 @@
 				49DB91AE2B8C0A4A001DF4EE /* Badge.swift */,
 			);
 			path = Badges;
+			sourceTree = "<group>";
+		};
+		49E7E8C72B8E4796005C6ECD /* PageViews */ = {
+			isa = PBXGroup;
+			children = (
+				49E7E8C82B8E47AE005C6ECD /* PageViewController.swift */,
+			);
+			path = PageViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +450,7 @@
 				4975BEB42B8D043000A94117 /* Tab.swift in Sources */,
 				49DB91A32B8BF1DE001DF4EE /* HexagonParameters.swift in Sources */,
 				49DB91AB2B8C0579001DF4EE /* RotatedBadgeSymbol.swift in Sources */,
+				49E7E8C92B8E47AE005C6ECD /* PageViewController.swift in Sources */,
 				49DB91AD2B8C0624001DF4EE /* BadgeForeground.swift in Sources */,
 				4975BEB22B8CFD6700A94117 /* CategoryItem.swift in Sources */,
 				49DB91A92B8BFC28001DF4EE /* BadgeSymbol.swift in Sources */,
