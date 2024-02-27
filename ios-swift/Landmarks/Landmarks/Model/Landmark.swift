@@ -35,6 +35,13 @@ struct Landmark : Codable, Hashable, Identifiable {
     var image: Image {
         Image(imageName)
     }
+    
+    var featureImage: Image? {
+        isFeatured
+        ? Image(imageName + "_feature")
+        : nil
+    }
+    
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D (
             latitude: coordinates.latitude,
