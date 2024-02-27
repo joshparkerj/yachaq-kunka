@@ -14,10 +14,24 @@ struct PageView <Page: View> : View {
     
     var body: some View {
         VStack {
-            PageViewController(pages: pages, currentPage: $pageNumber)
+            ZStack (alignment: .bottomTrailing) {
+                PageViewController(
+                    pages: pages,
+                    currentPage: $pageNumber
+                )
                 .aspectRatio(3.0 / 2.0, contentMode: .fit)
-            Spacer()
-            Text("Page: \(1 + $pageNumber.wrappedValue)")
+                
+                Spacer()
+                
+                /*Text("Page: \(1 + $pageNumber.wrappedValue)")*/
+                PageControl(
+                    numberOfPages: pages.count,
+                    currentPage: $pageNumber
+                )
+                .frame(width: CGFloat(pages.count + 18))
+                .padding(.trailing)
+            }
+            
             Button(action: {
                 pageNumber = 0
             }, label: {
